@@ -1,0 +1,232 @@
+
+/* --------- Global --------- */
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #eaeaea;
+}
+
+.light-mode {
+  background-color: #f8f8f8;
+  color: #1a1a1a;
+}
+
+/* --------- Header --------- */
+header {
+  text-align: center;
+  padding: 30px 10px;
+  border-bottom: 1px solid #444;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 10px 0 5px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.light-mode header p {
+  color: #444;
+}
+
+/* --------- Photo de profil --------- */
+.photo-profil {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  border: 2px solid #58a6ff;
+  margin-bottom: 15px;
+}
+
+/* --------- Bouton Thème --------- */
+.theme-toggle {
+  margin-top: 15px;
+}
+
+#toggle-theme {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#toggle-theme:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-mode #toggle-theme:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* --------- Sections --------- */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+h2 {
+  color: #58a6ff;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+.light-mode h2 {
+  color: #007acc;
+  border-color: #ccc;
+}
+
+/* --------- Projets --------- */
+.projet {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.light-mode .projet {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.projet:first-of-type {
+  margin-top: 40px;
+}
+
+.projet h3 {
+  margin-top: 2rem;
+  color: #ffcc00;
+}
+
+.projet h4 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.dark-mode h4 {
+  color: #f0f0f0;
+}
+
+/* --------- Galerie multi-images --------- */
+.galerie-projet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.galerie-projet img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #333;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  display: block;
+}
+
+.galerie-projet img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* --------- Responsiveness --------- */
+@media screen and (max-width: 600px) {
+  .galerie-projet img {
+    max-width: 100%;
+  }
+}
+
+/* --------- Liste compétences --------- */
+ul {
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* --------- Liens --------- */
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.light-mode a {
+  color: #007acc;
+}
+
+/* --------- Contact --------- */
+#contact a {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* --------- Footer --------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #444;
+  margin-top: 60px;
+}
+
+.light-mode footer {
+  border-color: #ccc;
+  color: #555;
+}
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .galerie-projet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galerie-projet img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}

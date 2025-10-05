@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Romain Monier</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <header>
+    <img src="images/romain-monier.jpg" alt="Photo de Romain Monier" class="photo-profil" />
+    <h1>Romain Monier</h1>
+    <p>Développeur web en reconversion – En recherche d'alternance (18 mois dès mars 2026)</p>
+
+    <div class="theme-toggle">
+      <button id="toggle-theme">🌙 Mode nuit</button>
+    </div>
+  </header>
+
+  <section id="presentation">
+  <h2>À propos de moi</h2>
+  <p>Je m'appelle Romain, développeur web en reconversion, et j’intègre la formation <strong>Concepteur Développeur d’Applications</strong> chez Simplon à partir de mars 2026 (option dev ops) pour une période de 18 mois. J’aime la logique, les interfaces bien conçues et les projets concrets. Je prends plaisir à apprendre chaque jour, à structurer mon code et à améliorer mes compétences.</p>
+  
+  <p>J’ai déjà mené plusieurs projets en autonomie, du backend à l’interface utilisateur, avec l’envie de bien faire, de comprendre ce que je construis et de créer des solutions utiles. Aujourd’hui, je cherche à intégrer une équipe qui a envie de transmettre, de collaborer et de faire confiance à un alternant motivé, curieux et impliqué.</p>
+  
+  <p><em>Je bénéficie d’une <strong>Reconnaissance de la  Qualité de Travailleur Handicapé (RQTH)</strong>, ce qui me permet de signer un contrat d’apprentissage (18 mois) avec des aides possibles pour l’entreprise, sans impact sur mon implication ou mes capacités.</em></p>
+</section>
+
+
+  <section id="projets">
+    <h2>Mes projets</h2>
+    <p>Voici trois projets concrets que j’ai réalisés récemment, en autonomie ou en formation. Ils illustrent mes compétences sur le frontend, le backend, l’organisation MVC et le déploiement.</p>
+
+    <!-- Projet 1 : Carambar -->
+    <div class="projet">
+      <h3>Carambar & Co – Application de blagues</h3>
+      <p>
+        Un projet complet réalisé en autonomie dans le cadre d’un exercice de sélection :
+        API Express + Sequelize (SQLite), frontend React, documentation Swagger,
+        déploiement sur GitHub Pages et Render.
+      </p>
+      <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank">Voir le projet complet</a>
+
+      <div class="galerie-projet-container">
+        <h4>Interface utilisateur (Frontend)</h4>
+        <div class="galerie-projet">
+          <img src="images/carambar-frontend-1.png" alt="Liste des blagues côté React" />
+          <img src="images/carambar-frontend-2.png" alt="Formulaire d'ajout de blague" />
+          <img src="images/carambar-frontend-3.png" alt="Blague ajoutée affichée dans l'interface" />
+        </div>
+      </div>
+
+      <div class="galerie-projet-container">
+        <h4>Fonctionnalités côté serveur (Backend)</h4>
+        <div class="galerie-projet">
+          <img src="images/carambar-backend-1-swagger.png" alt="Documentation Swagger de l'API Carambar" />
+          <img src="images/carambar-backend-2-post.png" alt="Création de blague via Swagger (POST)" />
+          <img src="images/carambar-backend-3-sequelize.png" alt="Configuration Sequelize avec SQLite" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Projet 2 : Gamepack -->
+    <div class="projet">
+      <h3>Packajeux – Mini-jeux web</h3>
+      <p>
+        Une collection de mini-jeux HTML/CSS/JS que j’ai codée pour progresser sur le DOM, les événements
+        et les sessions PHP. Chaque jeu a sa propre logique, avec système de score et organisation modulaire des fichiers.
+      (sur les photos c'est écrit Gamepack mais j'ai changé le nom en packajeux car gamepack est le nom d'une entreprise existante)
+      </p>
+      <a href="https://github.com/Romain62300/gamepack" target="_blank">Voir le projet</a>
+
+      <div class="galerie-projet-container">
+        <h4>Captures d’écran</h4>
+        <div class="galerie-projet">
+          <img src="images/gamepack-1.png" alt="Page d’accueil Gamepack" />
+          <img src="images/gamepack-2.png" alt="Pied de page avec mentions légales" />
+          <img src="images/gamepack-3.png" alt="Espace utilisateur connecté avec jetons" />
+          <img src="images/gamepack-4.png" alt="Mini-jeu Pierre-Feuille-Ciseaux" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Projet 3 : La Perche Tendue -->
+    <div class="projet">
+      <h3>La Perche Tendue – Site associatif</h3>
+      <p>
+        Un site vitrine développé pour une association de solidarité. Réalisé avec une architecture MVC en PHP POO,
+        il inclut un back-office sécurisé, une page de dons, un système d’actualités et une gestion RGPD avec TarteAuCitron.
+      </p>
+      <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank">Voir le projet</a>
+
+      <div class="galerie-projet-container">
+        <h4>Captures d’écran</h4>
+        <div class="galerie-projet">
+          <img src="images/perche-1.png" alt="Services proposés par l'association" />
+          <img src="images/perche-2.png" alt="Brochures à télécharger" />
+          <img src="images/perche-3.png" alt="Formulaire de don à l'association" />
+          <img src="images/perche-4.png" alt="Formulaire de contact" />
+          <img src="images/perche-5.png" alt="Mentions légales et RGPD" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences techniques</h2>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+      <li>React, Node.js, Express, Sequelize</li>
+      <li>PHP (POO / MVC), MySQL</li>
+      <li>Git / GitHub, GitHub Pages</li>
+      <li>Swagger, Postman, Déploiement Render</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:r.monier62@hotmail.com">r.monier62@hotmail.com</a></p>
+    <p>GitHub : <a href="https://github.com/Romain62300" target="_blank">github.com/Romain62300</a></p>
+  </section>
+
+  <footer>
+    <p>© Romain Monier – Portfolio 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

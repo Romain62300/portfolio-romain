@@ -230,3 +230,23 @@ footer {
     height: auto;
   }
 }
+/* Bouton CV coloré */
+.btn-cv {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.95 rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #00b4d8, #0077b6); /* Dégradé bleu/turquoise */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+/* Effet au survol */
+.btn-cv:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #0096c7, #023e8a); /* Dégradé plus foncé */
+}

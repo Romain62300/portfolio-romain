@@ -244,9 +244,64 @@ footer {
   transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
 
-/* Effet au survol */
-.btn-cv:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-  background: linear-gradient(135deg, #0096c7, #023e8a); /* Dégradé plus foncé */
+.socials {
+  margin-top: .75rem;
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .55rem .9rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .12s ease, box-shadow .2s ease, background .2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.social-btn .icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor; /* l’icône prend la couleur du texte */
+}
+
+/* Thème clair (mode jour) */
+body:not(.dark-mode) .social-btn { 
+  background: #f1f5f9; 
+  color: #0f172a; 
+}
+body:not(.dark-mode) .social-btn:hover { 
+  transform: translateY(-1px); 
+  box-shadow: 0 8px 18px rgba(0,0,0,.12); 
+}
+
+/* Thème sombre (mode nuit) */
+.dark-mode .social-btn { 
+  background: #1f2937; 
+  color: #e5e7eb; 
+}
+.dark-mode .social-btn:hover { 
+  transform: translateY(-1px); 
+  box-shadow: 0 8px 18px rgba(0,0,0,.35); 
+}
+
+/* --- Spécifique LinkedIn --- */
+.social-btn[href*="linkedin.com"] {
+  background: #0A66C2; /* Bleu officiel LinkedIn */
+  color: #fff;
+  border: 1px solid #004182; /* bordure pour contraste */
+}
+.social-btn[href*="linkedin.com"]:hover {
+  background: #004182; /* plus foncé au hover */
+}
+
+/* Variante LinkedIn en mode sombre */
+.dark-mode .social-btn[href*="linkedin.com"] {
+  background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
+  color: #fff;
+  border: 1px solid #0a66c2;
 }

@@ -1,210 +1,264 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio – Romain Monier</title>
-  <!-- <link rel="stylesheet" href="style.css" />-->
-  <link rel="stylesheet" href="style.css?v=2025-10-06-02">
-
+  <title>Romain Monier — Développeur Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="dark-mode">
-  <header>
-    <img src="images/romain-monier.jpg" alt="Photo de Romain Monier" class="photo-profil" />
-    <h1>Romain Monier</h1>
-    <p>Développeur web en reconversion – En recherche d'alternance (18 mois dès octobre 2026)</p>
+  <nav class="nav-top">
+    <span class="nav-logo">RM</span>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#softskills">Soft skills</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="images/CV_Romain_Monier_Candidature-_2_.jpg" class="nav-cta" target="_blank" rel="noopener">CV →</a>
+  </nav>
 
-    <div class="theme-toggle">
-      <button id="toggle-theme">🌙 Mode nuit</button>
+  <section class="hero" id="about">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-tag">Développeur Web · En recherche d'alternance</div>
+        <h1 class="hero-name">Romain<br><em>Monier</em></h1>
+        <p class="hero-sub">Reconversion passionnée vers le dev web. Je construis des interfaces utiles, du backend structuré, et j'apprends chaque jour avec méthode et curiosité.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn-ghost">Me contacter</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Hauts-de-France</span>
+          <span>🎓 Simplon – CDA · Oct. 2026 · 18 mois</span>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-photo-wrap">
+          <img src="images/romain-monier.jpg" alt="Romain Monier" class="hero-photo" />
+          <div class="hero-photo-deco"></div>
+        </div>
+        <div class="hero-card-rqth">
+          <span class="card-icon">♿</span>
+          <div>
+            <strong>RQTH</strong>
+            <p>Contrat d'apprentissage avec aides possibles pour l'entreprise. Aucun impact sur l'implication.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
-
-  <section id="presentation">
-    <h2>À propos de moi</h2>
-    <p>
-      <a href="images/CV_Romain_Monier_Candidature-_2_.jpg"
-   class=" btn-cv" target="_blank" rel="noopener">
-        📄 Télécharger mon CV (avril 2026)
-      </a>
-
-    </p>
-
-
-    <p>Je m'appelle Romain, développeur web en reconversion, et j’intègre la formation <strong>Concepteur Développeur
-        d’Applications</strong> chez Simplon à partir de octobre 2026 (option eco-conception) pour une période de 18
-      mois. J’aime la logique, les interfaces bien conçues et les projets concrets. Je prends plaisir à apprendre chaque
-      jour, à structurer mon code et à améliorer mes compétences.</p>
-
-    <p>J’ai déjà mené plusieurs projets en autonomie, du backend à l’interface utilisateur, avec l’envie de bien faire,
-      de comprendre ce que je construis et de créer des solutions utiles. Aujourd’hui, je cherche à intégrer une équipe
-      qui a envie de transmettre, de collaborer et de faire confiance à un alternant motivé, curieux et impliqué.</p>
-
-    <p><em>Je bénéficie d’une <strong>Reconnaissance de la Qualité de Travailleur Handicapé (RQTH)</strong>, ce qui me
-        permet de signer un contrat d’apprentissage (18 mois) avec des aides possibles pour l’entreprise, sans impact
-        sur mon implication ou mes capacités.</em></p>
+    <div class="hero-scroll">↓</div>
   </section>
 
-  <section id="projets">
-    <h2>Mes projets</h2>
-    <p>Voici quatres projets concrets que j’ai réalisés récemment, en autonomie ou en formation. Ils illustrent mes
-      compétences sur le frontend, le backend, l’organisation MVC et le déploiement.</p>
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <div class="section-label">01 — Compétences</div>
+      <h2 class="section-title">Stack technique</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="tags"><span>Node.js</span><span>Express</span><span>PHP (POO/MVC)</span><span>Sequelize</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Base de données</h3>
+          <div class="tags"><span>MySQL</span><span>SQLite</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Outils</h3>
+          <div class="tags"><span>Git / GitHub</span><span>GitHub Pages</span><span>Swagger</span><span>Postman</span><span>Render</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="projet">
+  <section class="section section-alt" id="softskills">
+    <div class="section-inner">
+      <div class="section-label">02 — Soft skills</div>
+      <h2 class="section-title">Ce qui me distingue</h2>
+      <p class="section-intro">Au-delà du code, ce sont des qualités humaines qui font la différence dans une équipe.</p>
+      <div class="soft-grid">
+        <div class="soft-card">
+          <div class="soft-icon">🔍</div>
+          <h3>Curiosité</h3>
+          <p>J'apprends en continu, je pose des questions, je creuse jusqu'à comprendre. Le "pourquoi" m'intéresse autant que le "comment".</p>
+        </div>
+        <div class="soft-card">
+          <div class="soft-icon">🧩</div>
+          <h3>Autonomie</h3>
+          <p>Capable de mener un projet de A à Z seul, de structurer mes tâches et de trouver des solutions avant de demander de l'aide.</p>
+        </div>
+        <div class="soft-card">
+          <div class="soft-icon">📐</div>
+          <h3>Rigueur</h3>
+          <p>Code organisé, nommage cohérent, respect des conventions. Je prends le temps de bien faire pour éviter la dette technique.</p>
+        </div>
+        <div class="soft-card">
+          <div class="soft-icon">🤝</div>
+          <h3>Esprit d'équipe</h3>
+          <p>J'écoute, je partage, je m'adapte. Je cherche à apporter ma contribution sans prendre la place — et à apprendre de mes collègues.</p>
+        </div>
+        <div class="soft-card">
+          <div class="soft-icon">🌱</div>
+          <h3>Adaptabilité</h3>
+          <p>La reconversion m'a appris à changer de contexte rapidement, à remettre en question mes certitudes et à progresser sous contrainte.</p>
+        </div>
+        <div class="soft-card">
+          <div class="soft-icon">💬</div>
+          <h3>Communication</h3>
+          <p>Je sais expliquer ce que je fais, signaler les blocages, et rendre compte de mon avancement clairement — sans survente ni silence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <h3>Dé virtuel — Dice Roller (JavaScript)</h3>
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-label">03 — Projets</div>
+      <h2 class="section-title">Ce que j'ai construit</h2>
+      <p class="section-intro">Quatre projets concrets, du frontend à l'architecture backend, menés en autonomie ou en formation.</p>
 
-      <p>
-        Mini-projet développé en <strong>HTML / CSS / JavaScript</strong> permettant
-        de simuler différents types de dés (d4 à d20), avec affichage du résultat
-        et historique des lancers.
-      </p>
+      <article class="projet-card projet-featured">
+        <div class="projet-header">
+          <div class="projet-badge">Fullstack · React · Express · Sequelize</div>
+          <h3>Carambar &amp; Co</h3>
+          <p>Application de blagues avec API REST complète. Backend Express + Sequelize (SQLite), frontend React, documentation Swagger, déploiement GitHub Pages et Render.</p>
+          <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank" class="projet-link">Voir le projet →</a>
+        </div>
+        <div class="projet-gallery">
+          <div class="gallery-label">Frontend</div>
+          <div class="gallery-row">
+            <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"><img src="images/carambar-frontend-1.png" alt="Liste des blagues" /></a>
+            <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"><img src="images/carambar-frontend-2.png" alt="Formulaire d'ajout" /></a>
+            <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"><img src="images/carambar-frontend-3.png" alt="Blague ajoutée" /></a>
+          </div>
+          <div class="gallery-label" style="margin-top:1.2rem">Backend</div>
+          <div class="gallery-row">
+            <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"><img src="images/carambar-backend-1-swagger.png" alt="Swagger" /></a>
+            <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"><img src="images/carambar-backend-2-post.png" alt="POST Swagger" /></a>
+            <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"><img src="images/carambar-backend-3-sequelize.png" alt="Sequelize" /></a>
+          </div>
+        </div>
+      </article>
 
-      <p>
-        Objectif : travailler la logique JavaScript, la manipulation du DOM,
-        la gestion des événements et une interface utilisateur claire.
-      </p>
+      <article class="projet-card">
+        <div class="projet-header">
+          <div class="projet-badge">PHP · MVC · POO · RGPD</div>
+          <h3>La Perche Tendue</h3>
+          <p>Site vitrine pour une association de solidarité. Architecture MVC en PHP POO, back-office sécurisé, page de dons, système d'actualités, gestion RGPD avec TarteAuCitron.</p>
+          <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank" class="projet-link">Voir le projet →</a>
+        </div>
+        <div class="projet-gallery">
+          <div class="gallery-row">
+            <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank"><img src="images/perche-1.png" alt="Services" /></a>
+            <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank"><img src="images/perche-2.png" alt="Brochures" /></a>
+            <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank"><img src="images/perche-3.png" alt="Dons" /></a>
+            <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank"><img src="images/perche-4.png" alt="Contact" /></a>
+            <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank"><img src="images/perche-5.png" alt="RGPD" /></a>
+          </div>
+        </div>
+      </article>
 
-      <a href="https://github.com/Romain62300/dice-roller-js" target="_blank" rel="noopener noreferrer">
-        Voir le code du projet
-      </a>
+      <article class="projet-card">
+        <div class="projet-header">
+          <div class="projet-badge">HTML · CSS · JS · PHP Sessions</div>
+          <h3>Packajeux</h3>
+          <p>Collection de mini-jeux pour progresser sur le DOM, les événements et les sessions PHP. Système de score, organisation modulaire, logique propre à chaque jeu.</p>
+          <a href="https://github.com/Romain62300/gamepack" target="_blank" class="projet-link">Voir le projet →</a>
+        </div>
+        <div class="projet-gallery">
+          <div class="gallery-row">
+            <a href="https://github.com/Romain62300/gamepack" target="_blank"><img src="images/gamepack-1.png" alt="Accueil" /></a>
+            <a href="https://github.com/Romain62300/gamepack" target="_blank"><img src="images/gamepack-2.png" alt="Footer" /></a>
+            <a href="https://github.com/Romain62300/gamepack" target="_blank"><img src="images/gamepack-3.png" alt="Utilisateur" /></a>
+            <a href="https://github.com/Romain62300/gamepack" target="_blank"><img src="images/gamepack-4.png" alt="Jeu PFC" /></a>
+          </div>
+        </div>
+      </article>
 
-      <div class="galerie-projet">
-        <a href="https://github.com/Romain62300/dice-roller-js" target="_blank" rel="noopener noreferrer">
-          <img src="images/Projet-dé.png" alt="Dé virtuel en JavaScript" />
+      <article class="projet-card">
+        <div class="projet-header">
+          <div class="projet-badge">HTML · CSS · JavaScript · Web Audio API</div>
+          <h3>Loto-Salle</h3>
+          <p>Application de Loto/Bingo entièrement dans le navigateur. Supporte Loto 1–90 et Bingo 1–75, voix française, curseur de délai, bouton répéter, plein écran, stats en direct, historique des tirages et effets confetti.</p>
+          <div class="projet-links">
+            <a href="https://github.com/Romain62300/loto-salle" target="_blank" class="projet-link">GitHub →</a>
+            <a href="https://romain62300.github.io/loto-salle/loto.html" target="_blank" class="projet-link">Voir en ligne →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="projet-card">
+        <div class="projet-header">
+          <div class="projet-badge">HTML · CSS · JavaScript</div>
+          <h3>Dice Roller</h3>
+          <p>Mini-projet de dé virtuel (d4 à d20) avec affichage du résultat et historique des lancers. Focus sur la logique JS, la manipulation du DOM et la gestion des événements.</p>
+          <div class="projet-links">
+            <a href="https://github.com/Romain62300/dice-roller-js" target="_blank" class="projet-link">GitHub →</a>
+            <a href="https://romain62300.github.io/dice-roller-js/" target="_blank" class="projet-link">Démo →</a>
+          </div>
+        </div>
+        <div class="projet-gallery">
+          <div class="gallery-row">
+            <a href="https://github.com/Romain62300/dice-roller-js" target="_blank"><img src="images/dice-roller.png" alt="Dé virtuel JS" /></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="section-title">Travaillons ensemble</h2>
+      <p class="section-intro">Je recherche une alternance de 18 mois à partir d'octobre 2026 dans une équipe qui aime transmettre et collaborer.</p>
+      <div class="contact-links">
+        <a href="mailto:r.monier62@hotmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>r.monier62@hotmail.com</span>
+        </a>
+        <a href="https://github.com/Romain62300" target="_blank" class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </span>
+          <span>github.com/Romain62300</span>
+        </a>
+        <a href="https://www.linkedin.com/in/romain-monier-lens/" target="_blank" class="contact-item contact-linkedin">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8.98h5V24H0V8.98zM8.49 8.98H13v2.05h.07c.63-1.2 2.18-2.46 4.49-2.46 4.81 0 5.7 3.17 5.7 7.29V24h-5v-6.93c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.79-2.65 3.65V24h-5V8.98z"/></svg>
+          </span>
+          <span>linkedin.com/in/romain-monier-lens</span>
         </a>
       </div>
-    </div>
-
-
-
-    <h3>Carambar & Co – Application de blagues</h3>
-    <p>
-      Un projet complet réalisé en autonomie dans le cadre d’un exercice de sélection :
-      API Express + Sequelize (SQLite), frontend React, documentation Swagger,
-      déploiement sur GitHub Pages et Render.
-    </p>
-    <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank">Voir le projet complet</a>
-
-    <div class="galerie-projet-container">
-      <h4>Interface utilisateur (Frontend)</h4>
-      <div class="galerie-projet">
-        <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"
-          rel="noopener noreferrer"><img src="images/carambar-frontend-1.png" alt="Liste des blagues côté React" /></a>
-        <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"
-          rel="noopener noreferrer"><img src="images/carambar-frontend-2.png" alt="Formulaire d'ajout de blague" /></a>
-        <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"
-          rel="noopener noreferrer"><img src="images/carambar-frontend-3.png"
-            alt="Blague ajoutée affichée dans l'interface" /></a>
-      </div>
-    </div>
-
-    <div class="galerie-projet-container">
-      <h4>Fonctionnalités côté serveur (Backend)</h4>
-      <div class="galerie-projet">
-        <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"
-          rel="noopener noreferrer"><img src="images/carambar-backend-1-swagger.png"
-            alt="Documentation Swagger de l'API Carambar" /></a>
-        <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"
-          rel="noopener noreferrer"><img src="images/carambar-backend-2-post.png"
-            alt="Création de blague via Swagger (POST)" /></a>
-        <a href="https://github.com/Romain62300/carambar-blague-fullstack" target="_blank"
-          rel="noopener noreferrer"><img src="images/carambar-backend-3-sequelize.png"
-            alt="Configuration Sequelize avec SQLite" /></a>
-      </div>
-    </div>
-    </div>
-
-    <!-- Projet 2 : Gamepack -->
-    <div class="projet">
-      <h3>Packajeux – Mini-jeux web</h3>
-      <p>
-        Une collection de mini-jeux HTML/CSS/JS que j’ai codée pour progresser sur le DOM, les événements
-        et les sessions PHP. Chaque jeu a sa propre logique, avec système de score et organisation modulaire des
-        fichiers.
-        (sur les photos c'est écrit Gamepack mais j'ai changé le nom en packajeux car gamepack est le nom d'une
-        entreprise existante)
-      </p>
-      <a href="https://github.com/Romain62300/gamepack" target="_blank">Voir le projet</a>
-
-      <div class="galerie-projet-container">
-        <h4>Captures d’écran</h4>
-        <div class="galerie-projet">
-          <a href="https://github.com/Romain62300/gamepack" target="_blank" rel="noopener noreferrer"><img
-              src="images/gamepack-1.png" alt="Page d’accueil Gamepack" /></a>
-          <a href="https://github.com/Romain62300/gamepack" target="_blank" rel="noopener noreferrer"><img
-              src="images/gamepack-2.png" alt="Pied de page avec mentions légales" /></a>
-          <a href="https://github.com/Romain62300/gamepack" target="_blank" rel="noopener noreferrer"><img
-              src="images/gamepack-3.png" alt="Espace utilisateur connecté avec jetons" /></a>
-          <a href="https://github.com/Romain62300/gamepack" target="_blank" rel="noopener noreferrer"><img
-              src="images/gamepack-4.png" alt="Mini-jeu Pierre-Feuille-Ciseaux" /></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projet 3 : La Perche Tendue -->
-    <div class="projet">
-      <h3>La Perche Tendue – Site associatif</h3>
-      <p>
-        Un site vitrine développé pour une association de solidarité. Réalisé avec une architecture MVC en PHP POO,
-        il inclut un back-office sécurisé, une page de dons, un système d’actualités et une gestion RGPD avec
-        TarteAuCitron.
-      </p>
-      <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank">Voir le projet</a>
-
-      <div class="galerie-projet-container">
-        <h4>Captures d’écran</h4>
-        <div class="galerie-projet">
-          <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank" rel="noopener noreferrer"><img
-              src="images/perche-1.png" alt="Services proposés par l'association" /></a>
-          <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank" rel="noopener noreferrer"><img
-              src="images/perche-2.png" alt="Brochures à télécharger" /></a>
-          <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank" rel="noopener noreferrer"><img
-              src="images/perche-3.png" alt="Formulaire de don à l'association" /></a>
-          <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank" rel="noopener noreferrer"><img
-              src="images/perche-4.png" alt="Formulaire de contact" /></a>
-          <a href="https://github.com/Romain62300/LaPercheTendueV2" target="_blank" rel="noopener noreferrer"><img
-              src="images/perche-5.png" alt="Mentions légales et RGPD" /></a>
-        </div>
-      </div>
+      <a href="images/CV_Romain_Monier_Candidature-_2_.jpg" class="btn-primary btn-lg" target="_blank" rel="noopener">📄 Télécharger mon CV</a>
     </div>
   </section>
 
-  <section id="competences">
-    <h2>Compétences techniques</h2>
-    <ul>
-      <li>HTML / CSS / JavaScript</li>
-      <li>React, Node.js, Express, Sequelize</li>
-      <li>PHP (POO / MVC), MySQL</li>
-      <li>Git / GitHub, GitHub Pages</li>
-      <li>Swagger, Postman, Déploiement Render</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:r.monier62@hotmail.com">r.monier62@hotmail.com</a></p>
-    <p>GitHub : <a href="https://github.com/Romain62300" target="_blank">github.com/Romain62300</a></p>
-    <p>
-      <a class="social-btn" href="https://www.linkedin.com/in/romain-monier-lens/" target="_blank" rel="noopener"
-        aria-label="LinkedIn">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8.98h5V24H0V8.98zM8.49 8.98H13v2.05h.07c.63-1.2 2.18-2.46 4.49-2.46 4.81 0 5.7 3.17 5.7 7.29V24h-5v-6.93c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.79-2.65 3.65V24h-5V8.98z" />
-        </svg>
-        <span>linkedin.com/in/romain-monier-lens</span>
-      </a>
-    </p>
-
-  </section>
-
-
-  <footer>
-    <p>© Romain Monier – Portfolio 2026</p>
+  <footer class="footer">
+    <span>© Romain Monier 2026</span>
+    <span>Développeur web en reconversion · Hauts-de-France</span>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-top ul a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 100) current = sec.id; });
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.soft-card, .projet-card, .skill-group').forEach(el => observer.observe(el));
+  </script>
 </body>
-
 </html>

@@ -475,7 +475,6 @@ body {
 .projet-link:hover { opacity: 0.75; }
 
 /* Gallery */
-.projet-gallery {}
 
 .gallery-label {
   font-family: var(--font-mono);

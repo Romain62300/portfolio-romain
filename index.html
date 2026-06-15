@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
   <nav class="nav-top">
     <span class="nav-logo">RM</span>
     <ul>
@@ -22,7 +23,7 @@
     </ul>
     <a href="images/CV_Romain_Monier_Candidature-_2_.jpg" class="nav-cta" target="_blank" rel="noopener">CV →</a>
   </nav>
-
+ 
   <section class="hero" id="about">
     <div class="hero-grid">
       <div class="hero-left">
@@ -35,7 +36,8 @@
         </div>
         <div class="hero-meta">
           <span>📍 Hauts-de-France</span>
-          <span>🎓 Simplon – CDA · Oct. 2026 · 18 mois</span>
+          <span>🎓 Simplon – CDA · Juil. 2026 · 18 mois</span>
+          <span>💼 Micro-entreprise Alakachan Dev · freelance</span>
         </div>
       </div>
       <div class="hero-right">
@@ -54,7 +56,7 @@
     </div>
     <div class="hero-scroll">↓</div>
   </section>
-
+ 
   <section class="section" id="skills">
     <div class="section-inner">
       <div class="section-label">01 — Compétences</div>
@@ -79,7 +81,7 @@
       </div>
     </div>
   </section>
-
+ 
   <section class="section section-alt" id="softskills">
     <div class="section-inner">
       <div class="section-label">02 — Soft skills</div>
@@ -119,14 +121,23 @@
       </div>
     </div>
   </section>
-
+ 
   <section class="section" id="projects">
     <div class="section-inner">
       <div class="section-label">03 — Projets</div>
       <h2 class="section-title">Ce que j'ai construit</h2>
-      <p class="section-intro">Quatre projets concrets, du frontend à l'architecture backend, menés en autonomie ou en formation.</p>
-
+      <p class="section-intro">Des projets concrets, du frontend au fullstack temps réel, menés en autonomie ou en formation.</p>
+ 
       <article class="projet-card projet-featured">
+        <div class="projet-header">
+          <div class="projet-badge">Fullstack temps réel · React · Node · Prisma · Socket.IO</div>
+          <h3>Quiz Multisujet</h3>
+          <p>Application de quiz multijoueur en temps réel. Front React + Vite + Tailwind, back Node.js + Express, base de données via Prisma + SQLite, communication temps réel par WebSocket (Socket.IO). Authentification JWT, back-office admin complet (création/édition de quiz et de questions), timer par question, lobby multijoueur et scoreboard en direct.</p>
+          <a href="https://github.com/Romain62300/quizz-multisujet" target="_blank" class="projet-link">Voir le projet →</a>
+        </div>
+      </article>
+ 
+      <article class="projet-card">
         <div class="projet-header">
           <div class="projet-badge">Fullstack · React · Express · Sequelize</div>
           <h3>Carambar &amp; Co</h3>
@@ -148,7 +159,7 @@
           </div>
         </div>
       </article>
-
+ 
       <article class="projet-card">
         <div class="projet-header">
           <div class="projet-badge">PHP · MVC · POO · RGPD</div>
@@ -166,7 +177,28 @@
           </div>
         </div>
       </article>
-
+ 
+      <article class="projet-card">
+        <div class="projet-header">
+          <div class="projet-badge">React · Vite · Drag &amp; Drop</div>
+          <h3>Tangram</h3>
+          <p>Jeu de tangram interactif en React. Composants découpés (pièces, plateau, bibliothèque de figures, silhouette cible), glisser-déposer et rotation des pièces, sauvegarde/chargement des compositions. Architecture front propre et réutilisable.</p>
+          <div class="projet-links">
+            <a href="https://github.com/Romain62300/tangram-app" target="_blank" class="projet-link">GitHub →</a>
+            <a href="https://romain62300.github.io/tangram-app/" target="_blank" class="projet-link">Voir en ligne →</a>
+          </div>
+        </div>
+      </article>
+ 
+      <article class="projet-card">
+        <div class="projet-header">
+          <div class="projet-badge">JavaScript vanilla · IA · Architecture modulaire</div>
+          <h3>Belote</h3>
+          <p>Jeu de belote en JavaScript pur, sans framework. Code structuré en trois modules séparés : logique de jeu, intelligence artificielle des adversaires et interface. Une démonstration de structuration et de logique algorithmique sans dépendances.</p>
+          <a href="https://github.com/Romain62300/belote-packajeux" target="_blank" class="projet-link">Voir le projet →</a>
+        </div>
+      </article>
+ 
       <article class="projet-card">
         <div class="projet-header">
           <div class="projet-badge">HTML · CSS · JS · PHP Sessions</div>
@@ -183,7 +215,7 @@
           </div>
         </div>
       </article>
-
+ 
       <article class="projet-card">
         <div class="projet-header">
           <div class="projet-badge">HTML · CSS · JavaScript · Web Audio API</div>
@@ -195,47 +227,15 @@
           </div>
         </div>
       </article>
-
-      <article class="projet-card">
-        <div class="projet-header">
-          <div class="projet-badge">HTML · CSS · JavaScript</div>
-          <h3>Dice Roller</h3>
-          <p>Mini-projet de dé virtuel (d4 à d20) avec affichage du résultat et historique des lancers. Focus sur la logique JS, la manipulation du DOM et la gestion des événements.</p>
-          <div class="projet-links">
-            <a href="https://github.com/Romain62300/dice-roller-js" target="_blank" class="projet-link">GitHub →</a>
-            <a href="https://romain62300.github.io/dice-roller-js/" target="_blank" class="projet-link">Démo →</a>
-          </div>
-        </div>
-        <div class="projet-gallery">
-          <div class="gallery-row">
-            <a href="https://github.com/Romain62300/dice-roller-js" target="_blank"><img src="images/dice-roller.png" alt="Dé virtuel JS" /></a>
-          </div>
-        </div>
-      </article>
-      <article class="projet-card">
-        <div class="projet-header">
-          <div class="projet-badge">HTML · CSS · JavaScript · Formspree</div>
-          <h3>Alakachan Dev</h3>
-          <p>"Site vitrine freelance complet — architecture multi-pages, formulaires fonctionnels, SEO on-page, mentions légales, sitemap. Conçu comme un vrai projet client de A à Z."</p>
-          <div class="projet-links">
-            <a href="https://github.com/Romain62300/alakachan-dev" target="_blank" class="projet-link">GitHub →</a>
-            <a href="https://romain62300.github.io/alakachan-dev/" target="_blank" class="projet-link">Voir en ligne →</a>
-          </div>
-        </div>
-        <div class="projet-gallery">
-          <div class="gallery-row">
-            <a href="https://romain62300.github.io/alakachan-dev/" target="_blank"><img src="images/alakachan-1.png" alt="Alakachan Dev - Accueil" /></a>
-          </div>
-        </div>
-      </article>
+ 
     </div>
   </section>
-
+ 
   <section class="section section-contact" id="contact">
     <div class="section-inner contact-inner">
       <div class="section-label">04 — Contact</div>
       <h2 class="section-title">Travaillons ensemble</h2>
-      <p class="section-intro">Je recherche une alternance de 18 mois à partir d'octobre 2026 dans une équipe qui aime transmettre et collaborer.</p>
+      <p class="section-intro">Je recherche une alternance de 18 mois à partir de juillet 2026 dans une équipe qui aime transmettre et collaborer.</p>
       <div class="contact-links">
         <a href="mailto:r.monier62@hotmail.com" class="contact-item">
           <span class="contact-icon">✉</span>
@@ -257,12 +257,12 @@
       <a href="images/CV_Romain_Monier_Candidature-_2_.jpg" class="btn-primary btn-lg" target="_blank" rel="noopener">📄 Télécharger mon CV</a>
     </div>
   </section>
-
+ 
   <footer class="footer">
     <span>© Romain Monier 2026</span>
     <span>Développeur web en reconversion · Hauts-de-France</span>
   </footer>
-
+ 
   <script>
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-top ul a');
